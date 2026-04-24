@@ -9,6 +9,10 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org/)
 
+<p align="center">
+  <img src="docs/assets/portfolio-card.png" alt="Mixed-type anomaly detection portfolio card" width="100%">
+</p>
+
 ---
 
 ## 📋 Table of Contents
@@ -421,7 +425,7 @@ anomalies = final_score > threshold
 *Figure 22: Weighted sum score distribution shows clear separation*
 
 ![Weighted Sum Results](Final_project/images/WS_PCATSNE.png)
-*Figure 23: Weighted sum ensemble provides excellent anomaly detection*
+*Figure 23: Weighted sum ensemble gives the most coherent anomaly view in the unsupervised analysis. Without ground-truth labels, this remains a qualitative and agreement-based assessment.*
 
 ![Weighted Sum Feature Space](Final_project/images/WS_floatdims.png)
 *Figure 24: Weighted sum consistently identifies true anomalies across all feature combinations*
@@ -495,7 +499,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install required packages
-pip install -r requirements.txt
+pip install numpy pandas scikit-learn matplotlib seaborn torch tqdm
 ```
 
 ### Requirements
@@ -733,7 +737,7 @@ MSc_Unsupervised_Learning/
 ├── Lessons_notes/                           # Course materials
 │
 ├── README.md                                # This file
-├── requirements.txt                         # Python dependencies
+├── README.md                                # Main documentation
 └── .gitignore
 
 ```
